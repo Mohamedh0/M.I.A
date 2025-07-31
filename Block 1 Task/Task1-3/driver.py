@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-
+from action import Move, Defense
 class Driver(ABC):
     """Abstract base class for a race driver."""
     def __init__(self, name):
@@ -30,7 +30,6 @@ class Verstappen(Driver):
     """Max Verstappen driver with specific moves and defenses."""
     def __init__(self):
         super().__init__('Max Verstappen')
-        from action import Move, Defense
         self._moves = [
             Move("DRS Boost", 45, 12),
             Move("Red Bull Surge", 80, 20),
@@ -52,7 +51,6 @@ class Mostafa(Driver):
     """Hassan Mostafa driver with specific moves and defenses."""
     def __init__(self):
         super().__init__('Hassan Mostafa')
-        from action import Move, Defense
         self._moves = [
             Move("Turbo Start", 50, 10),
             Move("Mercedes Charge", 90, 22),

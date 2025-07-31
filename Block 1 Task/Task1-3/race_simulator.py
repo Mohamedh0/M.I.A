@@ -1,6 +1,6 @@
 import random
 from driver import Verstappen, Mostafa
-from action import Move, Defense  
+
 
 class RaceSimulator:
     """Simulates a race between two drivers with player-controlled actions."""
